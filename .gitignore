@@ -1,12 +1,19 @@
-*.class
+# Random n3wton files
+Test Server/
+updateTestServer.bat
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Build files
+target/
+jars/
+dependency-reduced-pom.xml
 *.jar
-*.war
-*.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Eclipse files
+.project
+.classpath
+
+# Idea files
+.idea/
+*.iml
+*-Release.zip
+SubmergedCore/dependency-reduced-pom.xml

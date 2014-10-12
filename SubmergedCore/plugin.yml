@@ -1,0 +1,15 @@
+name: SubmergedCore
+main: uk.submergedcode.SubmergedCore.SubmergedCore
+version: 1.0
+authors: [thefish97, n3wton]
+depends: [BukkitDatabaseManager, Vault]
+softdepend: [WorldGuard, WorldEdit]
+description: Fundamental plugins root plugin
+
+commands:
+    SubmergedCore:
+        description: Main command for the plugin
+        usage: /<command> 
+    modules:
+        description: Lists all modules
+        usage: /<command>
