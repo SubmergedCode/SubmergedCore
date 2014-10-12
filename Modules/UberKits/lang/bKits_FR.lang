@@ -1,0 +1,38 @@
+#create-error
+Ont ne peut pas crée cette configuration trousse
+
+#not-player
+Cette commande peut seulement être utilisée par un joueur
+
+#usage
+/trousse <nom_de_la_trousse>
+
+#given
+Tu a reçu la trousse %kit%
+
+#loaded
+%number% trousse chargée(s)
+
+#no-item-exists
+%item% n’existe pas
+
+#list
+Trousse disponible
+
+#timeout
+Tu ne peux pas utiliser la trousse %kit% pour un autre %time%
+
+#no-kit
+La trousse %kit% n’existe pas
+
+#seconds
+seconds
+
+#hours
+heures
+
+#days
+jours
+
+#minutes
+minutes

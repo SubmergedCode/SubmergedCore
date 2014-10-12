@@ -20,6 +20,7 @@
         <!-- Core -->
         <module>SubmergedCore</module>
         <module>Modules/BlocksPlus</module>
+        <module>Modules/UberKits</module>
     </modules>
 
     <licenses>

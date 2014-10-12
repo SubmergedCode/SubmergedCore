@@ -1,0 +1,38 @@
+#create-error
+Could not create kits config
+
+#not-player
+This command can only be used as a player
+
+#usage
+/kit <kit-name>
+
+#given
+You have been given %kit% kit
+
+#not-given
+The kit %kit% does not exist
+
+#loaded
+Loaded %number% kits
+
+#no-item-exists
+The item %item% doesn't exist
+
+#list
+Kits available: 
+
+#timeout
+You cannot use %kit% for another %time%
+
+#seconds
+seconds
+
+#hours
+hours
+
+#days
+days
+
+#minutes
+minutes
