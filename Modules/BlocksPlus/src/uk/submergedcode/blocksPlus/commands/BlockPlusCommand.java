@@ -177,6 +177,10 @@ public class BlockPlusCommand extends ModuleCommand implements Listener {
             return;
         }
         
+        if (event.getCause() != EntityDamageEvent.DamageCause.FALL) {
+            return;
+        }
+        
         final Player player = (Player)event.getEntity();
         final List<MetadataValue> meta = player.getMetadata("NoFallDamage");
         if (!meta.isEmpty()) {

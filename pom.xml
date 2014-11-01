@@ -21,6 +21,7 @@
         <module>SubmergedCore</module>
         <module>Modules/BlocksPlus</module>
         <module>Modules/UberKits</module>
+        <module>Modules/PluginControl</module>
     </modules>
 
     <licenses>

@@ -2,13 +2,17 @@ package uk.submergedcode.uberkits.commands;
 
 import java.util.Map;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import uk.submergedcode.SubmergedCore.SubmergedCore;
 import uk.submergedcode.SubmergedCore.commands.ModuleCommand;
 import uk.submergedcode.SubmergedCore.gui.GuiInventory;
+import uk.submergedcode.SubmergedCore.gui.misc.GuiEnchantment;
 import uk.submergedcode.SubmergedCore.module.Module;
 import uk.submergedcode.uberkits.Kit;
 import uk.submergedcode.uberkits.KitClaim;
@@ -96,7 +100,7 @@ public class KitCommand extends ModuleCommand {
 				continue;
 			}
 			
-			ItemStack item = new ItemStack(kit.getIcon());
+			ItemStack item = null;
 			String[] details = new String[3];
 			
 			KitClaim claim = m_module.canPlayerClaimKit(player, kit);
@@ -104,9 +108,11 @@ public class KitCommand extends ModuleCommand {
 			if (claim.canClaim) {
 				details[0] = ChatColor.GREEN + "Available";
 				details[1] = ChatColor.GOLD + "Left click to claim kit";
+                item = new ItemStack(kit.getIcon());
 			} else {
 				details[0] = ChatColor.RED + claim.timeLeft;
 				details[1] = "";
+                item = new ItemStack(Material.BEDROCK);
 			}
 			
 			details[2] = ChatColor.GOLD + "Right click to preview kit";
